@@ -1,0 +1,37 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        Component department1 = new Department("1");
+        Component department2 = new Department("2");
+        Component department3 = new Department("3");
+        Component department4 = new Department("4");
+        Component department5 = new Department("5");
+
+        Component employee1 = new Employee("John", 2000);
+        Component employee2 = new Employee("Pekka", 2000);
+        Component employee3 = new Employee("Marko", 2000);
+        Component employee4 = new Employee("Liisa", 2000);
+        Component employee5 = new Employee("marja", 2000);
+        Component employee6 = new Employee("Jukka", 2000);
+
+
+        department3.add(employee1);
+
+        department4.add(employee2);
+
+        department5.add(employee3);
+        department5.add(employee4);
+
+        department1.add(department2);
+        department1.add(department3);
+
+        department2.add(department4);
+        department2.add(department5);
+
+        department1.printData();
+
+        System.out.println(department1.getTotalSalary());
+
+    }
+}
