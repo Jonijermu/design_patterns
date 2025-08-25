@@ -2,5 +2,12 @@ package Ui;
 
 public abstract class CheckBox {
 
-    //void display();
+    protected String text;
+
+    public CheckBox(String text) {
+        this.text = text;
+
+    }
+
+    public abstract void display();
 }

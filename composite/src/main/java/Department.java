@@ -4,6 +4,7 @@ import java.util.List;
 public class Department extends Component {
 
     List<Component> children = new ArrayList<>();
+    double total = 0;
 
     public Department(String name) {
         super(name);
@@ -37,7 +38,6 @@ public class Department extends Component {
 
     @Override
     public double getTotalSalary() {
-        double total = 0;
         for (Component child : children) {
             total += child.getTotalSalary();
         }
