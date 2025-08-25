@@ -8,7 +8,7 @@ import Ui.TextField;
 public class Main {
     public static void main(String[] args) {
 
-        UiAbstractFactory factory = new FactoryA();
+        UiAbstractFactory factory = new FactoryB();
         Button button = factory.createButton("Click Me!");
         TextField textField = factory.createTextField("Enter Name");
         CheckBox checkBox = factory.createCheckBox("Click here");

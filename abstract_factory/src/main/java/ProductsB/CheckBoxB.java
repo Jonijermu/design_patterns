@@ -9,6 +9,17 @@ public class CheckBoxB extends CheckBox {
 
     @Override
     public void display() {
-        System.out.println("Checkbox B");
+        int width = text.length() + 4;
+
+        for (int i = 0; i < width; i++) {
+            System.out.print("+");
+        }
+        System.out.println();
+        System.out.println("| " + text + " |");
+
+        for (int i = 0; i < width; i++) {
+            System.out.print("+");
+        }
+        System.out.println();
     }
 }
