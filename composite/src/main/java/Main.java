@@ -8,19 +8,16 @@ public class Main {
         Component department4 = new Department("4");
         Component department5 = new Department("5");
 
-        Component employee1 = new Employee("John", 2000);
-        Component employee2 = new Employee("Pekka", 2000);
-        Component employee3 = new Employee("Marko", 2000);
-        Component employee4 = new Employee("Liisa", 2000);
-        Component employee5 = new Employee("marja", 2000);
-        Component employee6 = new Employee("Jukka", 2000);
+        Component employee1 = new Employee("John", 2500);
+        Component employee2 = new Employee("Pekka", 2400);
+        Component employee3 = new Employee("Marko", 3500);
+        Component employee4 = new Employee("Liisa", 4000);
+        Component employee5 = new Employee("marja", 1750);
 
 
         department1.add(employee5);
         department3.add(employee1);
-
         department4.add(employee2);
-
         department5.add(employee3);
         department5.add(employee4);
 
@@ -33,9 +30,9 @@ public class Main {
 
         department1.printData();
 
-        System.out.println(department1.getTotalSalary());
+        System.out.println("Total salary: " + department1.getTotalSalary());
         department3.remove(employee1);
-        System.out.println(department1.getTotalSalary());
+        System.out.println("Total salary after removal: " + department1.getTotalSalary());
 
         System.out.println(department1.toXML(0));
 
