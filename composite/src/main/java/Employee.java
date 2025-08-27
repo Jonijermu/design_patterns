@@ -48,4 +48,10 @@ public class Employee extends Component {
     public double getTotalSalary() {
         return salary;
     }
+
+    @Override
+    public String toXML(int indentLevel) {
+        String indent = "   ".repeat(indentLevel);
+        return indent + "<Employee name=\"" + name +"\" salary=\"" + salary +"\" />\n";
+    }
 }

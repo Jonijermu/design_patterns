@@ -38,10 +38,26 @@ public class Department extends Component {
 
     @Override
     public double getTotalSalary() {
+        total =0;
         for (Component child : children) {
             total += child.getTotalSalary();
         }
         return total;
+    }
+
+    @Override
+    public String toXML(int indentLevel) {
+        String indent = "    ".repeat(indentLevel);
+        StringBuilder sb = new StringBuilder();
+
+        sb.append(indent).append("<Department name =\"").append(name).append("\">\n");
+
+        for (Component child : children) {
+            sb.append(child.toXML(indentLevel + 1));
+        }
+
+        sb.append(indent).append("</Department name \"").append(name).append("\">\n");
+        return sb.toString();
     }
 
 

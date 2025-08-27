@@ -16,6 +16,7 @@ public class Main {
         Component employee6 = new Employee("Jukka", 2000);
 
 
+        department1.add(employee5);
         department3.add(employee1);
 
         department4.add(employee2);
@@ -25,6 +26,7 @@ public class Main {
 
         department1.add(department2);
         department1.add(department3);
+        department1.add(employee5);
 
         department2.add(department4);
         department2.add(department5);
@@ -32,6 +34,10 @@ public class Main {
         department1.printData();
 
         System.out.println(department1.getTotalSalary());
+        department3.remove(employee1);
+        System.out.println(department1.getTotalSalary());
+
+        System.out.println(department1.toXML(0));
 
     }
 }

@@ -17,4 +17,6 @@ public abstract class Component {
     public abstract Component getChild(int index);
 
     public abstract double getTotalSalary();
+
+    public abstract String toXML(int indentLevel);
 }
