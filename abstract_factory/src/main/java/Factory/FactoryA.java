@@ -24,4 +24,5 @@ public class FactoryA extends UiAbstractFactory {
     public CheckBox createCheckBox(String text) {
         return new CheckBoxA(text);
     }
+
 }

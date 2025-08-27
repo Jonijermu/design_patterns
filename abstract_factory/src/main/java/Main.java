@@ -17,6 +17,14 @@ public class Main {
         textField.display();
         checkBox.display();
 
+        button.setText("prööt");
+        button.display();
+
+        textField.setText("moi");
+        textField.display();
+
+        checkBox.setText("hello");
+        checkBox.display();
 
 
     }

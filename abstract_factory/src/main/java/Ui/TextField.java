@@ -10,4 +10,9 @@ public abstract class TextField {
     }
 
     public abstract void display();
+
+    public void setText(String text) {
+        this.text = text;
+
+    }
 }

@@ -13,4 +13,5 @@ public abstract class UiAbstractFactory {
     public abstract TextField createTextField(String text);
 
     public abstract CheckBox createCheckBox(String text);
+
 }
