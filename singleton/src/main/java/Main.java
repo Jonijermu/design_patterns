@@ -9,8 +9,8 @@ public class Main {
         Logger logger2 = Logger.getInstance();
         logger2.write("prööt");
         System.out.println(logger);
-        logger.write("Processing data...");
-        logger.write("Simulation finished");
-        logger.close();
+        logger2.write("Processing data...");
+        logger2.write("Simulation finished");
+        logger2.close();
     }
 }

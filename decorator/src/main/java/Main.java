@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         Printer printer = new BasicPrinter();
-        printer.print("Hello World!");
+        printer.print("prööt");
 
-        Printer printer2 = new EncryptedPrinter( new BasicPrinter());
+        Printer printer2 = new EncryptedPrinter( new XMLPrinter( new BasicPrinter()));
         printer2.print("Hello World!");
 
     }

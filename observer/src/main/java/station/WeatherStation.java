@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WeatherStation extends Thread implements WeatherInterface {
-
     int temperature;
     int maxTemp = 35;
     int minTemp = -10;
@@ -15,7 +14,6 @@ public class WeatherStation extends Thread implements WeatherInterface {
 
     public WeatherStation() {
         this.temperature = 1 + (int) (Math.random() * 10);
-
     }
 
     @Override

@@ -8,6 +8,7 @@ public class XMLPrinter extends PrinterDecorator {
 
     @Override
     public void print(String message) {
+        super.print(message.toLowerCase());
 
     }
 }
