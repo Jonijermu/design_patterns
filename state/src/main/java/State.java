@@ -11,9 +11,9 @@ public abstract class State {
         return character;
     }
 
-    abstract void train();
-    abstract void meditate();
-    abstract void fight();
+    abstract void train(Character character);
+    abstract void meditate(Character character);
+    abstract void fight(Character character);
 
 
 
