@@ -19,6 +19,10 @@
         <module>template_method</module>
         <module>strategy</module>
         <module>chain_of_responsibility</module>
+        <module>memento</module>
+        <module>proxy</module>
+        <module>visitor</module>
+        <module>builder</module>
     </modules>
 
     <properties>
