@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 public interface NewDateInterface {
 
     void setDay(int day);
