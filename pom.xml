@@ -24,6 +24,9 @@
         <module>visitor</module>
         <module>builder</module>
         <module>adapter</module>
+        <module>bridge</module>
+        <module>prototype</module>
+        <module>flyweight</module>
     </modules>
 
     <properties>
