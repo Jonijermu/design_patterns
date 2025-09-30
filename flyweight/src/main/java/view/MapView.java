@@ -25,7 +25,7 @@ public class MapView extends Application {
     @Override
     public void start(Stage stage) {
         // Create models
-        Map cityMap = new WildernessMap(factory);
+        Map cityMap = new CityMap(factory);
         render(cityMap);
 
         Scene scene = new Scene(grid, 32 * cityMap.getWidth(), 32 * cityMap.getHeight());
@@ -40,8 +40,7 @@ public class MapView extends Application {
         for (int row = 0; row < map.getHeight(); row++) {
             for (int col = 0; col < map.getWidth(); col++) {
                 Tile tile = map.getTile(row, col);
-                ImageView imageView = new ImageView(tile.getGraphics().getImage());
-                System.out.println(tile.getGraphics().getImage());
+                ImageView imageView = new ImageView(tile.getGraphics().getImage());;
                 imageView.setFitWidth(32);
                 imageView.setFitHeight(32);
                 grid.add(imageView, col, row);

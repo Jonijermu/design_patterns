@@ -28,6 +28,7 @@
         <module>prototype</module>
         <module>flyweight</module>
         <module>mediator</module>
+        <module>iterator</module>
     </modules>
 
     <properties>
