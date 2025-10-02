@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-
 <VBox alignment="CENTER" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserCreationController">
    <children>
       <Label contentDisplay="CENTER" prefHeight="33.0" prefWidth="204.0" text="Enter Username">
