@@ -50,13 +50,11 @@ public class Book implements Prototype {
     public Book clone() {
         return new Book(author, title, genre, publicationYear);
     }
-    @Override
-    public String toString() {
-        return "Book{" +
-                "author='" + author + '\'' +
-                ", title='" + title + '\'' +
-                ", genre='" + genre + '\'' +
-                ", publicationYear=" + publicationYear +
-                '}';
+
+    public void printInformation() {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Genre: " + genre);
+        System.out.println("Year: " + publicationYear);
     }
 }
