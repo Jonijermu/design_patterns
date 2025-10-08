@@ -1,0 +1,14 @@
+.cell {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+}
+
+.highlightedCell {
+    -fx-border-color: yellow;
+    -fx-border-width: 3;
+}
+
+.toggle {
+    -fx-background-color: #1e1e1e;
+}
